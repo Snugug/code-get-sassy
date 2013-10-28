@@ -1,4 +1,19 @@
 /* line 9, ../sass/style.scss */
+h4, h5, h6, p {
+  font-family: "Helvetica" "Arial" sans-serif;
+}
+
+/* line 13, ../sass/style.scss */
+h1, h2, h3 {
+  font-family: "Garamond" "Times New Roman" serif;
+}
+
+/* line 17, ../sass/style.scss */
 h1 {
   color: #c0ffee;
+}
+
+/* line 21, ../sass/style.scss */
+h2, h3, h4 {
+  color: #b4d455;
 }
