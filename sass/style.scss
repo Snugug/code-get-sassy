@@ -1,30 +1,6 @@
-$font-sans: 'Helvetica' 'Arial' sans-serif;
-$font-serif: 'Garamond' 'Times New Roman' serif;
-
-$color-primary: #c0ffee;
-$color-secondary: #b4d455;
-$color-tertiary: #cd529a;
-
-
-%font-sans {
-  font-family: $font-sans;
-}
-
-%font-serif {
-  font-family: $font-serif;
-}
-
-%color-primary {
-  color: $color-primary;
-}
-
-%color-secondary {
-  color: $color-secondary;
-}
-
-%color-tertiary {
-  color: $color-tertiary;
-}
+@import "partials/colors";
+@import "partials/typography";
+@import "partials/extendables";
 
 h1 {
   @extend %font-serif;
