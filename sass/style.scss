@@ -6,6 +6,54 @@ $color-secondary: #b4d455;
 $color-tertiary: #cd529a;
 
 
-h1 {
+%font-sans {
+  font-family: $font-sans;
+}
+
+%font-serif {
+  font-family: $font-serif;
+}
+
+%color-primary {
   color: $color-primary;
+}
+
+%color-secondary {
+  color: $color-secondary;
+}
+
+%color-tertiary {
+  color: $color-tertiary;
+}
+
+h1 {
+  @extend %font-serif;
+  @extend %color-primary;
+}
+
+h2 {
+  @extend %font-serif;
+  @extend %color-secondary;
+}
+
+h3 {
+  @extend %font-serif;
+  @extend %color-secondary;
+}
+
+h4 {
+  @extend %font-sans;
+  @extend %color-secondary;
+}
+
+h5 {
+  @extend %font-sans;
+}
+
+h6 {
+  @extend %font-sans;
+}
+
+p {
+  @extend %font-sans;
 }
