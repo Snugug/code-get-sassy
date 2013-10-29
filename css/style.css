@@ -17,3 +17,29 @@ h1 {
 h2, h3, h4 {
   color: #b4d455;
 }
+
+/* line 21, ../sass/partials/_extendables.scss */
+.button--primary, .button--secondary {
+  border-radius: 3px;
+  border: 2px outset;
+}
+/* line 25, ../sass/partials/_extendables.scss */
+.button--primary:hover, .button--secondary:hover {
+  cursor: pointer;
+}
+/* line 29, ../sass/partials/_extendables.scss */
+.button--primary:active, .button--secondary:active {
+  border-style: inset;
+}
+
+/* line 39, ../sass/style.scss */
+.button--primary {
+  background: #c0ffee;
+  border-color: #90bfb2;
+}
+
+/* line 43, ../sass/style.scss */
+.button--secondary {
+  background: #b4d455;
+  border-color: #879f3f;
+}
