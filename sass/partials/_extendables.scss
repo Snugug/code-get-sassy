@@ -17,3 +17,16 @@
 %color-tertiary {
   color: $color-tertiary;
 }
+
+%button {
+  border-radius: 3px;
+  border: 2px outset;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    border-style: inset;
+  }
+}
