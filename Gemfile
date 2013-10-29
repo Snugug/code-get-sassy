@@ -18,3 +18,4 @@ source 'https://rubygems.org'
 # Use the prescribed versions of the following gems
 gem 'sass', '>=3.3.0.rc.1'
 gem 'compass', '>=0.13.alpha.10'
+gem "compass-yiq-color-contrast", "~> 1.0.0"
