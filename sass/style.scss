@@ -1,6 +1,7 @@
 @import "partials/colors";
 @import "partials/typography";
 @import "partials/extendables";
+@import "partials/mixins";
 
 h1 {
   @extend %font-serif;
