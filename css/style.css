@@ -32,14 +32,16 @@ h2, h3, h4 {
   border-style: inset;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .button--primary {
-  background: #c0ffee;
+  background-color: #c0ffee;
+  color: #333333;
   border-color: #90bfb2;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .button--secondary {
-  background: #b4d455;
+  background-color: #b4d455;
+  color: #333333;
   border-color: #879f3f;
 }
