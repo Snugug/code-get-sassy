@@ -1,0 +1,3 @@
+@function shade($color, $amount: 25%) {
+  @return mix(black, $color, $amount);
+}
