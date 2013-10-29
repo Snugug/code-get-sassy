@@ -1,6 +1,7 @@
 @import "partials/colors";
 @import "partials/typography";
 @import "partials/extendables";
+@import "partials/functions";
 @import "partials/mixins";
 
 h1 {
@@ -33,4 +34,12 @@ h6 {
 
 p {
   @extend %font-sans;
+}
+
+.button--primary {
+  @include button($color-primary);
+}
+
+.button--secondary {
+  @include button($color-secondary);
 }
