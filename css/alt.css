@@ -1,0 +1,52 @@
+/* line 1, ../sass/partials/_extendables.scss */
+h4, h5, h6, p {
+  font-family: "Helvetica" "Arial" sans-serif;
+}
+
+/* line 5, ../sass/partials/_extendables.scss */
+h1, h2, h3 {
+  font-family: "Garamond" "Times New Roman" serif;
+}
+
+/* line 9, ../sass/partials/_extendables.scss */
+h1 {
+  color: #552fea;
+}
+
+/* line 13, ../sass/partials/_extendables.scss */
+h2, h3, h4 {
+  color: #275d4e;
+}
+
+/* line 17, ../sass/partials/_extendables.scss */
+a {
+  color: #534e26;
+}
+
+/* line 21, ../sass/partials/_extendables.scss */
+.button--primary, .button--secondary {
+  border-radius: 3px;
+  border: 2px outset;
+}
+/* line 25, ../sass/partials/_extendables.scss */
+.button--primary:hover, .button--secondary:hover {
+  cursor: pointer;
+}
+/* line 29, ../sass/partials/_extendables.scss */
+.button--primary:active, .button--secondary:active {
+  border-style: inset;
+}
+
+/* line 37, ../sass/partials/_shared-styling.scss */
+.button--primary {
+  background-color: #552fea;
+  color: #eeeeee;
+  border-color: #3f23af;
+}
+
+/* line 41, ../sass/partials/_shared-styling.scss */
+.button--secondary {
+  background-color: #275d4e;
+  color: #eeeeee;
+  border-color: #1d453a;
+}

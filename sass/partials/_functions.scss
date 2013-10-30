@@ -1,3 +1,17 @@
 @function shade($color, $amount: 25%) {
   @return mix(black, $color, $amount);
 }
+
+@function secondary-color() {
+  $secondary: adjust-hue($color-primary, -88.69141);
+  $secondary: desaturate($secondary, 40.37559%);
+  $secondary: darken($secondary, 29.38177%);
+  @return $secondary;
+}
+
+@function tertiary-color() {
+  $tertiary: adjust-hue($color-primary, 161.06853);
+  $tertiary: desaturate($tertiary, 44.84305%);
+  $tertiary: darken($tertiary, 31.37255%);
+  @return $tertiary;
+}
