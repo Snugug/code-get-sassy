@@ -1,6 +1,15 @@
 h1 {
   @extend %font-serif;
-  @extend %color-primary;
+
+  color: $color-primary;
+
+  @include respond-to('primary to secondary color') {
+    color: $color-secondary;
+  }
+  @include respond-to('secondary to tertiary color') {
+    color: $color-tertiary;
+  }
+
 }
 
 h2 {
