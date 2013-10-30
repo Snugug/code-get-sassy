@@ -1,0 +1,43 @@
+h1 {
+  @extend %font-serif;
+  @extend %color-primary;
+}
+
+h2 {
+  @extend %font-serif;
+  @extend %color-secondary;
+}
+
+h3 {
+  @extend %font-serif;
+  @extend %color-secondary;
+}
+
+h4 {
+  @extend %font-sans;
+  @extend %color-secondary;
+}
+
+h5 {
+  @extend %font-sans;
+}
+
+h6 {
+  @extend %font-sans;
+}
+
+p {
+  @extend %font-sans;
+}
+
+a {
+  @extend %color-tertiary;
+}
+
+.button--primary {
+  @include button($color-primary);
+}
+
+.button--secondary {
+  @include button($color-secondary);
+}
