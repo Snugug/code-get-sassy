@@ -1,4 +1,4 @@
-(function() {
+;(function() {
 
   window.onload = function() {
     var primary = document.getElementById('primary-theme');
@@ -12,5 +12,5 @@
     secondary.addEventListener('click', function() {
       stylesheet.href = 'css/alt.css';
     });
-  }
+  };
 }());
