@@ -8,11 +8,6 @@ h1, h2, h3 {
   font-family: "Garamond" "Times New Roman" serif;
 }
 
-/* line 9, ../sass/partials/_extendables.scss */
-h1 {
-  color: #552fea;
-}
-
 /* line 13, ../sass/partials/_extendables.scss */
 h2, h3, h4 {
   color: #275d4e;
@@ -37,14 +32,31 @@ a {
   border-style: inset;
 }
 
-/* line 37, ../sass/partials/_shared-styling.scss */
+/* line 1, ../sass/partials/_shared-styling.scss */
+h1 {
+  color: #552fea;
+}
+@media (min-width: 500px) {
+  /* line 1, ../sass/partials/_shared-styling.scss */
+  h1 {
+    color: #275d4e;
+  }
+}
+@media (min-width: 800px) {
+  /* line 1, ../sass/partials/_shared-styling.scss */
+  h1 {
+    color: #534e26;
+  }
+}
+
+/* line 46, ../sass/partials/_shared-styling.scss */
 .button--primary {
   background-color: #552fea;
   color: #eeeeee;
   border-color: #3f23af;
 }
 
-/* line 41, ../sass/partials/_shared-styling.scss */
+/* line 50, ../sass/partials/_shared-styling.scss */
 .button--secondary {
   background-color: #275d4e;
   color: #eeeeee;
