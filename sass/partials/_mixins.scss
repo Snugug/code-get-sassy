@@ -3,3 +3,17 @@
   @include yiq-contrasted($color);
   border-color: shade($color);
 }
+
+@mixin respond-to($query) {
+  $size: map-get($breakpoints, $query);
+
+  @if ($size) {
+    @media (min-width: #{$size}) {
+      @content;
+    }
+  }
+  @else {
+    @warn $query + " is not a defined media query in $breakpoints";
+    @content;
+  }
+}
