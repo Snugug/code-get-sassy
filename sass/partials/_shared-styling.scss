@@ -50,3 +50,40 @@ a {
 .button--secondary {
   @include button($color-secondary);
 }
+
+$links: github, reddit, apple, android, windows;
+
+@each $link in $links {
+  a[href*="#{$link}"] {
+    @extend %link-shared;
+      &:before {
+       @extend %ligatures;
+        content: '#{$link}';
+    }
+  }
+}
+
+@for $i from 1 through length($links) {
+  $bkg-lightness: 'light';
+  @if yiq-contrast-color($color-tertiary) == $yiq-contrasted-light-default {
+    $bkg-lightness: 'dark';
+  }
+
+  $step: 100 / (length($links) + 1) * $i;
+
+  $bkg-color: $color-tertiary;
+  @if $bkg-lightness == 'light' {
+    $bkg-color: mix(black, $color-tertiary, $step);
+  }
+  @else {
+    $bkg-color: mix(white, $color-tertiary, $step);
+  }
+
+  li:nth-of-type(#{$i}) {
+    background-color: $bkg-color;
+
+    a {
+      color: yiq-contrast-color($bkg-color);
+    }
+  }
+}
