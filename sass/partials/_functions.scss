@@ -2,16 +2,22 @@
   @return mix(black, $color, $amount);
 }
 
-@function secondary-color() {
-  $secondary: adjust-hue($color-primary, -88.69141);
-  $secondary: desaturate($secondary, 40.37559%);
-  $secondary: darken($secondary, 29.38177%);
-  @return $secondary;
-}
+@function cs($ordinal) {
+  $cs-color: $color-primary;
 
-@function tertiary-color() {
-  $tertiary: adjust-hue($color-primary, 161.06853);
-  $tertiary: desaturate($tertiary, 44.84305%);
-  $tertiary: darken($tertiary, 31.37255%);
-  @return $tertiary;
+  @if $ordinal == 'secondary' {
+    $cs-color: adjust-hue($cs-color, -88.69141);
+    $cs-color: desaturate($cs-color, 40.37559%);
+    $cs-color: darken($cs-color, 29.38177%);
+  }
+  @else if $ordinal == 'tertiary' {
+    $cs-color: adjust-hue($cs-color, 161.06853);
+    $cs-color: desaturate($cs-color, 44.84305%);
+    $cs-color: darken($cs-color, 31.37255%);
+  }
+  @else {
+    @warn 'You did not choose secondary or tertiary!';
+  }
+
+  @return $cs-color;
 }

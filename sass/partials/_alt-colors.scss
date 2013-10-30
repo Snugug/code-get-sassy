@@ -1,6 +1,6 @@
 $color-primary: #552fea;
-$color-secondary: secondary-color();
-$color-tertiary: tertiary-color();
+$color-secondary: cs(secondary);
+$color-tertiary: cs(tertiary);
 
 $yiq-contrasted-dark-default: #333;
 $yiq-contrasted-light-default: #eee;
