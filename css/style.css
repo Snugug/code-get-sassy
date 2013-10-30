@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'icon';
+  src: url("../fonts/icon/icon.eot");
+  src: url("../fonts/icon/icon.eot?#iefix") format("embedded-opentype"), url("../fonts/icon/icon.ttf") format("truetype"), url("../fonts/icon/icon.woff") format("woff"), url("../fonts/icon/icon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 1, ../sass/partials/_extendables.scss */
 h4, h5, h6, p {
   font-family: "Helvetica" "Arial" sans-serif;
@@ -32,6 +39,36 @@ a {
   border-style: inset;
 }
 
+/* line 34, ../sass/partials/_extendables.scss */
+a[href*="github"]:before, a[href*="reddit"]:before, a[href*="apple"]:before, a[href*="android"]:before, a[href*="windows"]:before {
+  font-family: 'icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 56, ../sass/partials/_extendables.scss */
+a[href*="github"], a[href*="reddit"], a[href*="apple"], a[href*="android"], a[href*="windows"] {
+  text-decoration: none;
+}
+/* line 59, ../sass/partials/_extendables.scss */
+a[href*="github"]:before, a[href*="reddit"]:before, a[href*="apple"]:before, a[href*="android"]:before, a[href*="windows"]:before {
+  padding-right: .5em;
+}
+
 /* line 1, ../sass/partials/_shared-styling.scss */
 h1 {
   color: #c0ffee;
@@ -61,4 +98,74 @@ h1 {
   background-color: #b4d455;
   color: #333333;
   border-color: #879f3f;
+}
+
+/* line 59, ../sass/partials/_shared-styling.scss */
+a[href*="github"]:before {
+  content: "github";
+}
+
+/* line 59, ../sass/partials/_shared-styling.scss */
+a[href*="reddit"]:before {
+  content: "reddit";
+}
+
+/* line 59, ../sass/partials/_shared-styling.scss */
+a[href*="apple"]:before {
+  content: "apple";
+}
+
+/* line 59, ../sass/partials/_shared-styling.scss */
+a[href*="android"]:before {
+  content: "android";
+}
+
+/* line 59, ../sass/partials/_shared-styling.scss */
+a[href*="windows"]:before {
+  content: "windows";
+}
+
+/* line 82, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(1) {
+  background-color: #d56eaa;
+}
+/* line 85, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(1) a {
+  color: #333333;
+}
+
+/* line 82, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(2) {
+  background-color: #dd8bbb;
+}
+/* line 85, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(2) a {
+  color: #333333;
+}
+
+/* line 82, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(3) {
+  background-color: #e6a8cc;
+}
+/* line 85, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(3) a {
+  color: #333333;
+}
+
+/* line 82, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(4) {
+  background-color: #eec5dd;
+}
+/* line 85, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(4) a {
+  color: #333333;
+}
+
+/* line 82, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(5) {
+  background-color: #f6e2ee;
+}
+/* line 85, ../sass/partials/_shared-styling.scss */
+li:nth-of-type(5) a {
+  color: #333333;
 }
