@@ -1,4 +1,4 @@
-;(function() {
+(function() {
 
   window.onload = function() {
     var primary = document.getElementById('primary-theme');
