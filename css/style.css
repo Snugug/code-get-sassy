@@ -18,6 +18,11 @@ h2, h3, h4 {
   color: #b4d455;
 }
 
+/* line 17, ../sass/partials/_extendables.scss */
+a {
+  color: #cd529a;
+}
+
 /* line 21, ../sass/partials/_extendables.scss */
 .button--primary, .button--secondary {
   border-radius: 3px;
@@ -32,14 +37,14 @@ h2, h3, h4 {
   border-style: inset;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 37, ../sass/partials/_shared-styling.scss */
 .button--primary {
   background-color: #c0ffee;
   color: #333333;
   border-color: #90bfb2;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 41, ../sass/partials/_shared-styling.scss */
 .button--secondary {
   background-color: #b4d455;
   color: #333333;
