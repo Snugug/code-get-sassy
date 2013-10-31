@@ -10,7 +10,7 @@ GEM
     compass-yiq-color-contrast (1.0.0)
       compass
       sass
-    ffi (1.9.2)
+    ffi (1.9.3)
     json (1.8.1)
     listen (1.1.6)
       rb-fsevent (>= 0.9.3)
