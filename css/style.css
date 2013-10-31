@@ -69,6 +69,11 @@ a[href*="github"]:before, a[href*="reddit"]:before, a[href*="apple"]:before, a[h
   padding-right: .5em;
 }
 
+/* line 64, ../sass/partials/_extendables.scss */
+.cow--highland, .cow--milk, .cow--tonguing {
+  float: left;
+}
+
 /* line 1, ../sass/partials/_shared-styling.scss */
 h1 {
   color: #c0ffee;
@@ -168,4 +173,31 @@ li:nth-of-type(5) {
 /* line 85, ../sass/partials/_shared-styling.scss */
 li:nth-of-type(5) a {
   color: #333333;
+}
+
+/* line 64, cows/*.png */
+.cows-sprite, .cow--highland, .cow--milk, .cow--tonguing {
+  background-image: url('../img/cows-sf15a179063.png');
+  background-repeat: no-repeat;
+}
+
+/* line 96, ../sass/partials/_shared-styling.scss */
+.cow--highland {
+  background-position: 0 0;
+  width: 320px;
+  height: 240px;
+}
+
+/* line 96, ../sass/partials/_shared-styling.scss */
+.cow--milk {
+  background-position: 0 -240px;
+  width: 320px;
+  height: 200px;
+}
+
+/* line 96, ../sass/partials/_shared-styling.scss */
+.cow--tonguing {
+  background-position: 0 -440px;
+  width: 320px;
+  height: 237px;
 }
