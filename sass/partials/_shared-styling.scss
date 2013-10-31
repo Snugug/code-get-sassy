@@ -87,3 +87,16 @@ $links: github, reddit, apple, android, windows;
     }
   }
 }
+
+@import "cows/*.png";
+
+$cow-sprite: sprite-map("cows/*.png");
+
+@each $cow in sprite-names($cow-sprite) {
+  .cow--#{$cow} {
+    @extend %cows;
+    @include cows-sprite($cow);
+    width: image-width("cows/#{$cow}.png");
+    height: image-height("cows/#{$cow}.png");
+  }
+}
