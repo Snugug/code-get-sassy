@@ -91,12 +91,43 @@ $links: github, reddit, apple, android, windows;
 @import "cows/*.png";
 
 $cow-sprite: sprite-map("cows/*.png");
+$cows: sprite-names($cow-sprite);
 
-@each $cow in sprite-names($cow-sprite) {
+@each $cow in $cows {
   .cow--#{$cow} {
     @extend %cows;
     @include cows-sprite($cow);
     width: image-width("cows/#{$cow}.png");
     height: image-height("cows/#{$cow}.png");
+  }
+}
+
+@for $i from 1 through length($cows) {
+  $first: $i + 1;
+  @if $first > length($cows) {
+    $first: 1;
+  }
+  $second: $i - 1;
+  @if $second < 1 {
+    $second: length($cows);
+  }
+  .cow--#{nth($cows, $i)} {
+
+    @include respond-to("first cow ordering") {
+      @include order($first);
+    }
+
+    @include respond-to("second cow ordering") {
+      @include order($second);
+    }
+  }
+}
+
+.farm {
+  @include respond-to("first cow ordering") {
+    @include flexbox((
+    display: flex,
+    flex-direction: row
+  ));
   }
 }
