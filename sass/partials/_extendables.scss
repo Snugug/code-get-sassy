@@ -63,4 +63,7 @@
 
 %cows {
   float: left;
+  @include respond-to("first cow ordering") {
+    @include flex(1 1 auto);
+  }
 }
