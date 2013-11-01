@@ -1,9 +1,2 @@
-@import "compass";
-@import "yiq-color-contrast";
-@import "partials/functions";
-@import "partials/alt-colors";
-@import "partials/variables";
-@import "partials/typography";
-@import "partials/mixins";
-@import "partials/extendables";
-@import "partials/shared-styling";
+$color-primary: #552fea;
+@import "framework";
