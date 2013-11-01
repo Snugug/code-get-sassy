@@ -3,43 +3,27 @@
   src: url("../fonts/icon/icon.eot");
   src: url("../fonts/icon/icon.eot?#iefix") format("embedded-opentype"), url("../fonts/icon/icon.ttf") format("truetype"), url("../fonts/icon/icon.woff") format("woff"), url("../fonts/icon/icon.svg#icomoon") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
-/* line 1, ../framework/partials/_extendables.scss */
+  font-style: normal; }
 h4, h5, h6, p {
-  font-family: "Helvetica" "Arial" sans-serif;
-}
+  font-family: "Helvetica" "Arial" sans-serif; }
 
-/* line 5, ../framework/partials/_extendables.scss */
 h1, h2, h3 {
-  font-family: "Garamond" "Times New Roman" serif;
-}
+  font-family: "Garamond" "Times New Roman" serif; }
 
-/* line 13, ../framework/partials/_extendables.scss */
 h2, h3, h4 {
-  color: #b4d455;
-}
+  color: #b4d455; }
 
-/* line 17, ../framework/partials/_extendables.scss */
 a {
-  color: #cd529a;
-}
+  color: #cd529a; }
 
-/* line 21, ../framework/partials/_extendables.scss */
 .button--primary, .button--secondary {
   border-radius: 3px;
-  border: 2px outset;
-}
-/* line 25, ../framework/partials/_extendables.scss */
-.button--primary:hover, .button--secondary:hover {
-  cursor: pointer;
-}
-/* line 29, ../framework/partials/_extendables.scss */
-.button--primary:active, .button--secondary:active {
-  border-style: inset;
-}
+  border: 2px outset; }
+  .button--primary:hover, .button--secondary:hover {
+    cursor: pointer; }
+  .button--primary:active, .button--secondary:active {
+    border-style: inset; }
 
-/* line 34, ../framework/partials/_extendables.scss */
 a[href*="github"]:before, a[href*="reddit"]:before, a[href*="apple"]:before, a[href*="android"]:before, a[href*="windows"]:before {
   font-family: 'icon';
   speak: none;
@@ -57,209 +41,130 @@ a[href*="github"]:before, a[href*="reddit"]:before, a[href*="apple"]:before, a[h
   font-feature-settings: "liga";
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  -moz-osx-font-smoothing: grayscale; }
 
-/* line 56, ../framework/partials/_extendables.scss */
 a[href*="github"], a[href*="reddit"], a[href*="apple"], a[href*="android"], a[href*="windows"] {
-  text-decoration: none;
-}
-/* line 59, ../framework/partials/_extendables.scss */
-a[href*="github"]:before, a[href*="reddit"]:before, a[href*="apple"]:before, a[href*="android"]:before, a[href*="windows"]:before {
-  padding-right: .5em;
-}
+  text-decoration: none; }
+  a[href*="github"]:before, a[href*="reddit"]:before, a[href*="apple"]:before, a[href*="android"]:before, a[href*="windows"]:before {
+    padding-right: .5em; }
 
-/* line 64, ../framework/partials/_extendables.scss */
 .cow--highland, .cow--milk, .cow--tonguing {
-  float: left;
-}
-@media (min-width: 976px) {
-  /* line 64, ../framework/partials/_extendables.scss */
-  .cow--highland, .cow--milk, .cow--tonguing {
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
-  }
-}
+  float: left; }
+  @media (min-width: 976px) {
+    .cow--highland, .cow--milk, .cow--tonguing {
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto; } }
 
-/* line 1, ../framework/partials/_shared-styling.scss */
 h1 {
-  color: #c0ffee;
-}
-@media (min-width: 500px) {
-  /* line 1, ../framework/partials/_shared-styling.scss */
-  h1 {
-    color: #b4d455;
-  }
-}
-@media (min-width: 800px) {
-  /* line 1, ../framework/partials/_shared-styling.scss */
-  h1 {
-    color: #cd529a;
-  }
-}
+  color: #c0ffee; }
+  @media (min-width: 500px) {
+    h1 {
+      color: #b4d455; } }
+  @media (min-width: 800px) {
+    h1 {
+      color: #cd529a; } }
 
-/* line 46, ../framework/partials/_shared-styling.scss */
 .button--primary {
   background-color: #c0ffee;
   color: #333333;
-  border-color: #90bfb2;
-}
+  border-color: #90bfb2; }
 
-/* line 50, ../framework/partials/_shared-styling.scss */
 .button--secondary {
   background-color: #b4d455;
   color: #333333;
-  border-color: #879f3f;
-}
+  border-color: #879f3f; }
 
-/* line 59, ../framework/partials/_shared-styling.scss */
 a[href*="github"]:before {
-  content: "github";
-}
+  content: "github"; }
 
-/* line 59, ../framework/partials/_shared-styling.scss */
 a[href*="reddit"]:before {
-  content: "reddit";
-}
+  content: "reddit"; }
 
-/* line 59, ../framework/partials/_shared-styling.scss */
 a[href*="apple"]:before {
-  content: "apple";
-}
+  content: "apple"; }
 
-/* line 59, ../framework/partials/_shared-styling.scss */
 a[href*="android"]:before {
-  content: "android";
-}
+  content: "android"; }
 
-/* line 59, ../framework/partials/_shared-styling.scss */
 a[href*="windows"]:before {
-  content: "windows";
-}
+  content: "windows"; }
 
-/* line 82, ../framework/partials/_shared-styling.scss */
 li:nth-of-type(1) {
-  background-color: #d56eaa;
-}
-/* line 85, ../framework/partials/_shared-styling.scss */
-li:nth-of-type(1) a {
-  color: #333333;
-}
+  background-color: #d56eaa; }
+  li:nth-of-type(1) a {
+    color: #333333; }
 
-/* line 82, ../framework/partials/_shared-styling.scss */
 li:nth-of-type(2) {
-  background-color: #dd8bbb;
-}
-/* line 85, ../framework/partials/_shared-styling.scss */
-li:nth-of-type(2) a {
-  color: #333333;
-}
+  background-color: #dd8bbb; }
+  li:nth-of-type(2) a {
+    color: #333333; }
 
-/* line 82, ../framework/partials/_shared-styling.scss */
 li:nth-of-type(3) {
-  background-color: #e6a8cc;
-}
-/* line 85, ../framework/partials/_shared-styling.scss */
-li:nth-of-type(3) a {
-  color: #333333;
-}
+  background-color: #e6a8cc; }
+  li:nth-of-type(3) a {
+    color: #333333; }
 
-/* line 82, ../framework/partials/_shared-styling.scss */
 li:nth-of-type(4) {
-  background-color: #eec5dd;
-}
-/* line 85, ../framework/partials/_shared-styling.scss */
-li:nth-of-type(4) a {
-  color: #333333;
-}
+  background-color: #eec5dd; }
+  li:nth-of-type(4) a {
+    color: #333333; }
 
-/* line 82, ../framework/partials/_shared-styling.scss */
 li:nth-of-type(5) {
-  background-color: #f6e2ee;
-}
-/* line 85, ../framework/partials/_shared-styling.scss */
-li:nth-of-type(5) a {
-  color: #333333;
-}
+  background-color: #f6e2ee; }
+  li:nth-of-type(5) a {
+    color: #333333; }
 
-/* line 64, cows/*.png */
 .cows-sprite, .cow--highland, .cow--milk, .cow--tonguing {
   background-image: url('../img/cows-sf15a179063.png');
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
-/* line 97, ../framework/partials/_shared-styling.scss */
 .cow--highland {
   background-position: 0 0;
   width: 320px;
-  height: 240px;
-}
+  height: 240px; }
 
-/* line 97, ../framework/partials/_shared-styling.scss */
 .cow--milk {
   background-position: 0 -240px;
   width: 320px;
-  height: 200px;
-}
+  height: 200px; }
 
-/* line 97, ../framework/partials/_shared-styling.scss */
 .cow--tonguing {
   background-position: 0 -440px;
   width: 320px;
-  height: 237px;
-}
+  height: 237px; }
 
 @media (min-width: 976px) {
-  /* line 114, ../framework/partials/_shared-styling.scss */
   .cow--highland {
     -webkit-order: 2;
-    order: 2;
-  }
-}
+    order: 2; } }
 @media (min-width: 1300px) {
-  /* line 114, ../framework/partials/_shared-styling.scss */
   .cow--highland {
     -webkit-order: 3;
-    order: 3;
-  }
-}
+    order: 3; } }
 
 @media (min-width: 976px) {
-  /* line 114, ../framework/partials/_shared-styling.scss */
   .cow--milk {
     -webkit-order: 3;
-    order: 3;
-  }
-}
+    order: 3; } }
 @media (min-width: 1300px) {
-  /* line 114, ../framework/partials/_shared-styling.scss */
   .cow--milk {
     -webkit-order: 1;
-    order: 1;
-  }
-}
+    order: 1; } }
 
 @media (min-width: 976px) {
-  /* line 114, ../framework/partials/_shared-styling.scss */
   .cow--tonguing {
     -webkit-order: 1;
-    order: 1;
-  }
-}
+    order: 1; } }
 @media (min-width: 1300px) {
-  /* line 114, ../framework/partials/_shared-styling.scss */
   .cow--tonguing {
     -webkit-order: 2;
-    order: 2;
-  }
-}
+    order: 2; } }
 
 @media (min-width: 976px) {
-  /* line 126, ../framework/partials/_shared-styling.scss */
   .farm {
     display: -webkit-flex;
     -webkit-flex-direction: row;
     display: flex;
-    flex-direction: row;
-  }
-}
+    flex-direction: row; } }
+
+/*# sourceMappingURL=style.css.map */
