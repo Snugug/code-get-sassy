@@ -1,6 +1,8 @@
 # Require any additional compass plugins here.
 require 'compass-yiq-color-contrast'
 
+add_import_path "framework"
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "css"
