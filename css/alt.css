@@ -73,6 +73,13 @@ a[href*="github"]:before, a[href*="reddit"]:before, a[href*="apple"]:before, a[h
 .cow--highland, .cow--milk, .cow--tonguing {
   float: left;
 }
+@media (min-width: 976px) {
+  /* line 64, ../sass/partials/_extendables.scss */
+  .cow--highland, .cow--milk, .cow--tonguing {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+}
 
 /* line 1, ../sass/partials/_shared-styling.scss */
 h1 {
@@ -181,23 +188,78 @@ li:nth-of-type(5) a {
   background-repeat: no-repeat;
 }
 
-/* line 96, ../sass/partials/_shared-styling.scss */
+/* line 97, ../sass/partials/_shared-styling.scss */
 .cow--highland {
   background-position: 0 0;
   width: 320px;
   height: 240px;
 }
 
-/* line 96, ../sass/partials/_shared-styling.scss */
+/* line 97, ../sass/partials/_shared-styling.scss */
 .cow--milk {
   background-position: 0 -240px;
   width: 320px;
   height: 200px;
 }
 
-/* line 96, ../sass/partials/_shared-styling.scss */
+/* line 97, ../sass/partials/_shared-styling.scss */
 .cow--tonguing {
   background-position: 0 -440px;
   width: 320px;
   height: 237px;
+}
+
+@media (min-width: 976px) {
+  /* line 114, ../sass/partials/_shared-styling.scss */
+  .cow--highland {
+    -webkit-order: 2;
+    order: 2;
+  }
+}
+@media (min-width: 1300px) {
+  /* line 114, ../sass/partials/_shared-styling.scss */
+  .cow--highland {
+    -webkit-order: 3;
+    order: 3;
+  }
+}
+
+@media (min-width: 976px) {
+  /* line 114, ../sass/partials/_shared-styling.scss */
+  .cow--milk {
+    -webkit-order: 3;
+    order: 3;
+  }
+}
+@media (min-width: 1300px) {
+  /* line 114, ../sass/partials/_shared-styling.scss */
+  .cow--milk {
+    -webkit-order: 1;
+    order: 1;
+  }
+}
+
+@media (min-width: 976px) {
+  /* line 114, ../sass/partials/_shared-styling.scss */
+  .cow--tonguing {
+    -webkit-order: 1;
+    order: 1;
+  }
+}
+@media (min-width: 1300px) {
+  /* line 114, ../sass/partials/_shared-styling.scss */
+  .cow--tonguing {
+    -webkit-order: 2;
+    order: 2;
+  }
+}
+
+@media (min-width: 976px) {
+  /* line 126, ../sass/partials/_shared-styling.scss */
+  .farm {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+  }
 }
